@@ -1,3 +1,38 @@
+.header__mfaToggle {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 10px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.header__mfaToggle.enabled {
+  background-color: #4CAF50; /* Green background */
+}
+
+.header__mfaToggle.disabled {
+  background-color: #f44336; /* Red background */
+}
+
+.header__mfaToggle.enabled:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.header__mfaToggle.disabled:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.header__mfaToggle:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
 .header__container {
   display: flex;
   align-items: center;

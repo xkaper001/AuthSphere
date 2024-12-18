@@ -11,10 +11,9 @@ import { auth } from "../config/firebase";
 function Header() {
   const cart = useSelector((state) => state.cart);
   const { profile } = useSelector((state) => state.user);
-
   const navigate = useNavigate();
-
   const [mobileNav, setMobileNav] = useState(false);
+  const [mfaEnabled, setMfaEnabled] = useState(false); // State for MFA toggle
 
   const handleAuthentication = () => {
     setMobileNav((prevState) => !prevState);
@@ -24,11 +23,14 @@ function Header() {
 
   const getUserName = (email) => email.split("@")[0];
 
+  const toggleMfa = () => {
+    setMfaEnabled((prevState) => !prevState);
+  };
+
   return (
     <div className="header">
       <div className="header__container">
         {/* Menu Toggle Open */}
-
         <button
           aria-label="open menu"
           aria-controls="mobile-nav"
@@ -37,7 +39,6 @@ function Header() {
         >
           <TbMenu2 onClick={() => setMobileNav((prevState) => !prevState)} />
         </button>
-
         {/* Logo */}
         <Link to="/" className="header__logo-link">
           <img
@@ -48,7 +49,6 @@ function Header() {
             height={38}
           />
         </Link>
-
         {/* Search */}
         <div className="header__search mobile-hidden">
           <label htmlFor="product-search" className="visually-hidden">
@@ -59,7 +59,6 @@ function Header() {
             <AiOutlineSearch />
           </button>
         </div>
-
         {/* Navigation */}
         <nav className="header__nav">
           <div className="header__option mobile-hidden">
@@ -118,6 +117,10 @@ function Header() {
               <span className="mobile-hidden">Cart</span>
             </div>
           </Link>
+          {/* MFA Toggle Button */}
+          <button className="header__mfaToggle" onClick={toggleMfa}>
+            {mfaEnabled ? "Disable MFA" : "Enable MFA"}
+          </button>
         </nav>
       </div>
       <div className="header__mobileContainer desktop-hidden">
