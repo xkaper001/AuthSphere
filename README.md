@@ -1,6 +1,19 @@
+<img src="https://github.com/user-attachments/assets/bba65727-75c9-4d34-8ebf-b96ab1abcc52" width="auto" height="auto" /><br>
 # AuthSphere
 **Made by Group 51 for Project Exhibition I (2024)**
 
+<div align="center">  
+  
+| Home Screen | Enter Website to Monitor | 
+| :---         |     :---      |
+|  <img src="https://github.com/user-attachments/assets/bba65727-75c9-4d34-8ebf-b96ab1abcc52" width="500" height="auto" /> | <img src="https://github.com/user-attachments/assets/b8cdc218-1365-434a-87b1-dc7980f78609" width="500" height="auto" /> 
+| Monitoring | Incidents Listening | 
+|  <img src="https://github.com/user-attachments/assets/6ce4c862-cdf7-483d-93c0-1a846da3e56a" width="500" height="auto" /> | <img src="https://github.com/user-attachments/assets/d7c92e65-80a6-441a-8976-6925433aeb5c" width="500" height="auto" /> 
+| Amazon Clone Dashboard | Amazon Incorrect Login |
+|  <img src="https://github.com/user-attachments/assets/8fe6923a-7a6e-4267-b736-9b4900855b16" width="500" height="auto" /> | <img src="https://github.com/user-attachments/assets/2a3bf0ab-d995-4fc4-9a09-b5aea9f71ece" width="500" height="auto" /> 
+</div>
+
+# Architecture
 ![image](https://github.com/user-attachments/assets/918d7cf1-94a8-4fea-976a-863667620d32)
 
 ## Features 
