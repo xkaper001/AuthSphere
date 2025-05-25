@@ -1,8 +1,9 @@
 <img src="https://github.com/user-attachments/assets/bba65727-75c9-4d34-8ebf-b96ab1abcc52" width="auto" height="auto" /><br>
+<div align="center">  
+  
 # AuthSphere
 **Made by Group 51 for Project Exhibition I (2024)**
 
-<div align="center">  
   
 | Home Screen | Enter Website to Monitor | 
 | :---         |     :---      |
